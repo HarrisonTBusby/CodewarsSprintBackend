@@ -1,4 +1,12 @@
+using CodewarsSprintBackend.Services;
+using CodewarsSprintBackend.Services.Context;
+using Microsoft.EntityFrameworkCore;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<PasswordService>();
 
 // Add services to the container.
 
@@ -16,7 +24,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
