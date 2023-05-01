@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CodewarsSprintBackend.Models
 {
-    public class KataModel
+    public class ReservationModel
     {
         
     }
