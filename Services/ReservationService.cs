@@ -20,7 +20,7 @@ namespace CodewarsSprintBackend.Services
             _context.Add(newRes);
             return _context.SaveChanges() != 0;
         }
-        public IEnumerable<BlogItemModel> GetAllReservations()
+        public IEnumerable<ReservationModel> GetAllReservations()
         {
             return _context.ReservationInfo;
         }
