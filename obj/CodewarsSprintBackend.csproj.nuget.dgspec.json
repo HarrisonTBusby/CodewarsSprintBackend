@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/CodewarsSprintBackend.csproj": {}
+    "C:\\Users\\harry\\OneDrive\\Desktop\\CodeStack Level 4\\CodewarsSprintBackend\\CodewarsSprintBackend.csproj": {}
   },
   "projects": {
-    "/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/CodewarsSprintBackend.csproj": {
+    "C:\\Users\\harry\\OneDrive\\Desktop\\CodeStack Level 4\\CodewarsSprintBackend\\CodewarsSprintBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/CodewarsSprintBackend.csproj",
+        "projectUniqueName": "C:\\Users\\harry\\OneDrive\\Desktop\\CodeStack Level 4\\CodewarsSprintBackend\\CodewarsSprintBackend.csproj",
         "projectName": "CodewarsSprintBackend",
-        "projectPath": "/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/CodewarsSprintBackend.csproj",
-        "packagesPath": "/Users/amardeepmann/.nuget/packages/",
-        "outputPath": "/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/obj/",
+        "projectPath": "C:\\Users\\harry\\OneDrive\\Desktop\\CodeStack Level 4\\CodewarsSprintBackend\\CodewarsSprintBackend.csproj",
+        "packagesPath": "C:\\Users\\harry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\harry\\OneDrive\\Desktop\\CodeStack Level 4\\CodewarsSprintBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/amardeepmann/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\harry\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
