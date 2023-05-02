@@ -1,4 +1,24 @@
+using CodewarsSprintBackend.Services;
+using CodewarsSprintBackend.Services.Context;
+using Microsoft.EntityFrameworkCore;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<PasswordService>();
+
+var connectionString = builder.Configuration.GetConnectionString("CodewarsBackendString");
+builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddCors(options => {
+    options.AddPolicy("CodewarsBackendPolicy", 
+    builder => {
+        builder.WithOrigins("http://localhost:3000", "http://localhost:3001", "http://localhost:3002")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
 
 // Add services to the container.
 
@@ -16,7 +36,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseCors("CodewarsBackendPolicy");
+
 
 app.UseAuthorization();
 
