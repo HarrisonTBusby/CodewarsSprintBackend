@@ -3724,19 +3724,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\harry\\.nuget\\packages\\": {}
+    "/Users/amardeepmann/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\harry\\OneDrive\\Desktop\\CodeStack Level 4\\CodewarsSprintBackend\\CodewarsSprintBackend.csproj",
+      "projectUniqueName": "/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/CodewarsSprintBackend.csproj",
       "projectName": "CodewarsSprintBackend",
-      "projectPath": "C:\\Users\\harry\\OneDrive\\Desktop\\CodeStack Level 4\\CodewarsSprintBackend\\CodewarsSprintBackend.csproj",
-      "packagesPath": "C:\\Users\\harry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\harry\\OneDrive\\Desktop\\CodeStack Level 4\\CodewarsSprintBackend\\obj\\",
+      "projectPath": "/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/CodewarsSprintBackend.csproj",
+      "packagesPath": "/Users/amardeepmann/.nuget/packages/",
+      "outputPath": "/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\harry\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/amardeepmann/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -3804,7 +3804,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
