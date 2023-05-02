@@ -7,7 +7,7 @@ namespace CodewarsSprintBackend.Models
 {
     public class ReservationModel
     {
-        public int ResId { get; set; }
+        public int Id { get; set; }
         public int KataId { get; set; }
         public string? KataName { get; set; }
         public string? KataLang { get; set; }

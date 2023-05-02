@@ -21,6 +21,46 @@ namespace CodewarsSprintBackend.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CodewarsSprintBackend.Models.ReservationModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AssignedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("KataId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("KataLang")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("KataName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isCompleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isLocked")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ReservationInfo");
+                });
+
             modelBuilder.Entity("CodewarsSprintBackend.Models.UserModel", b =>
                 {
                     b.Property<int>("Id")
