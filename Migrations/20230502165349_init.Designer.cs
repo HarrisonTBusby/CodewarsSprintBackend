@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodewarsSprintBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230501182213_init")]
+    [Migration("20230502165349_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -40,6 +40,9 @@ namespace CodewarsSprintBackend.Migrations
 
                     b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isAdmin")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

@@ -33,6 +33,7 @@ namespace CodewarsSprintBackend.Services
 
                 var hashPassword = HashPassword(UserToAdd.Password);
                 newUser.Id = UserToAdd.Id;
+                newUser.isAdmin = UserToAdd.isAdmin;
                 newUser.Username = UserToAdd.Username;
                 newUser.Salt = hashPassword.Salt;
                 newUser.Hash = hashPassword.Hash;

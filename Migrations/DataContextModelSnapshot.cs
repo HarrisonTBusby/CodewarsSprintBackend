@@ -38,6 +38,9 @@ namespace CodewarsSprintBackend.Migrations
                     b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("isAdmin")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.ToTable("UserInfo");
