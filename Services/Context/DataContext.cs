@@ -16,6 +16,5 @@ namespace CodewarsSprintBackend.Services.Context
             base.OnModelCreating(builder);
         }
 
-       
     }
 }
