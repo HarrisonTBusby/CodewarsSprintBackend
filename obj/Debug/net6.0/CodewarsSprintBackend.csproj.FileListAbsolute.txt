@@ -162,8 +162,3 @@ C:/Users/harry/OneDrive/Desktop/CodeStack Level 4/CodewarsSprintBackend/obj/Debu
 /Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/obj/Debug/net6.0/CodewarsSprintBackend.pdb
 /Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/obj/Debug/net6.0/CodewarsSprintBackend.genruntimeconfig.cache
 /Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/obj/Debug/net6.0/ref/CodewarsSprintBackend.dll
-/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/bin/Debug/net6.0/publish/web.config
-/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/bin/Debug/net6.0/publish/appsettings.Development.json
-/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/bin/Debug/net6.0/publish/appsettings.json
-/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/bin/Debug/net6.0/publish/CodewarsSprintBackend.deps.json
-/Users/amardeepmann/Desktop/Codestack/level4/CodewarsSprintBackend/bin/Debug/net6.0/publish/CodewarsSprintBackend.runtimeconfig.json

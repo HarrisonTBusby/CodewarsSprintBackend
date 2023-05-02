@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<PasswordService>();
+builder.Services.AddScoped<ReservationService>();
 
 var connectionString = builder.Configuration.GetConnectionString("CodewarsBackendString");
 builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
