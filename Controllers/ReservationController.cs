@@ -8,7 +8,7 @@ namespace CodewarsSprintBackend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class KataController : ControllerBase
+    public class ReservationController : ControllerBase
     {
         
     }
