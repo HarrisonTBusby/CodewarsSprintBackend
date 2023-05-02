@@ -17,5 +17,6 @@ namespace CodewarsSprintBackend.Models
         public bool isLocked { get; set; }
         public bool isCompleted { get; set; }
         public bool isDeleted { get; set; }
+        public ReservationModel() {}
     }
 }
