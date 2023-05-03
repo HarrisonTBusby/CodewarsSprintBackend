@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodewarsSprintBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230502174826_init")]
+    [Migration("20230503063243_init")]
     partial class init
     {
         /// <inheritdoc />

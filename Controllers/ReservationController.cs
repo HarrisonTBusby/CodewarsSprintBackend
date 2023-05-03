@@ -26,6 +26,28 @@ namespace CodewarsSprintBackend.Controllers
             return _data.AddReservation(newRes);
         }
 
+        [HttpPost]
+        [Route("UpdateReservation")]
+
+        public bool UpdateReservation(ReservationModel ResItem)
+        {
+            return _data.UpdateReservation(ResItem);
+        }
+
+        [HttpPost]
+        [Route("MarkDeletedByResId/{ResId}")]
+        public bool MarkDeletedByResId(int ResId)
+        {
+            return _data.MarkDeletedByResId(ResId);
+        }
+
+        [HttpPost]
+        [Route("MarkCompletedByResId/{ResId}")]
+        public bool MarkCompletedByResId(int ResId)
+        {
+            return _data.MarkCompletedByResId(ResId);
+        }
+
         [HttpGet]
         [Route("GetAllReservations")]
 
@@ -33,5 +55,44 @@ namespace CodewarsSprintBackend.Controllers
         {
             return _data.GetAllReservations();
         }
+
+        [HttpGet]
+        [Route("GetAllActive")]
+
+        public IEnumerable<ReservationModel> GetAllActive()
+        {
+            return _data.GetAllActice();
+        }
+
+        [HttpGet]
+        [Route("GetActiveByUser/{UserId}")]
+        public ReservationModel GetActiveByUser(int UserId)
+        {
+            return _data.GetActiveByUser(UserId);
+        }
+
+        [HttpGet]
+        [Route("GetAllByUser/{UserId}")]
+
+        public IEnumerable<ReservationModel> GetAllByUser(int UserId)
+        {
+            return _data.GetAllByUser(UserId);
+        }
+
+        [HttpGet]
+        [Route("GetAllCompletedByUser/{UserId}")]
+
+        public IEnumerable<ReservationModel> GetAllCompletedByUser(int UserId)
+        {
+            return _data.GetAllCompletedByUser(UserId);
+        }
+
+        [HttpPost]
+        [Route("DANGERHardDeleteByResId/{ResId}")]
+        public bool DANGERHardDeleteByResId(int ResId)
+        {
+            return _data.DANGERHardDeleteByResId(ResId);
+        }
+        
     }
 }
