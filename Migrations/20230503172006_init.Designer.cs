@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodewarsSprintBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230503063243_init")]
+    [Migration("20230503172006_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -35,8 +35,8 @@ namespace CodewarsSprintBackend.Migrations
                     b.Property<string>("AssignedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("KataId")
-                        .HasColumnType("int");
+                    b.Property<string>("KataId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("KataLang")
                         .HasColumnType("nvarchar(max)");

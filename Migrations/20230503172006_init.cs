@@ -16,7 +16,7 @@ namespace CodewarsSprintBackend.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    KataId = table.Column<int>(type: "int", nullable: false),
+                    KataId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     KataName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     KataLang = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserId = table.Column<int>(type: "int", nullable: false),

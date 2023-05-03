@@ -32,8 +32,8 @@ namespace CodewarsSprintBackend.Migrations
                     b.Property<string>("AssignedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("KataId")
-                        .HasColumnType("int");
+                    b.Property<string>("KataId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("KataLang")
                         .HasColumnType("nvarchar(max)");

@@ -15,7 +15,7 @@ namespace CodewarsSprintBackend.Services
         {
             _context = context;
         }
-        public bool CheckIfKataAlreadyReserved(int KataId, string KataLang)
+        public bool CheckIfKataAlreadyReserved(string KataId, string KataLang)
         {
             return _context.ReservationInfo.SingleOrDefault(res => res.KataId == KataId && res.KataLang == KataLang && res.isCompleted == false && res.isDeleted == false) != null;
             //  Checks if the Kata/Language combo is already in database AND that is currently is progress (doesn't count deleted/completed)
