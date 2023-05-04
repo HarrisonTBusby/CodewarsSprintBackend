@@ -11,7 +11,7 @@ using System.Text;
 
 namespace CodewarsSprintBackend.Services
 {
-    public class UserService : ControllerBase 
+    public class UserService : ControllerBase
     {
         private readonly DataContext _context;
         public UserService(DataContext context)
@@ -24,9 +24,9 @@ namespace CodewarsSprintBackend.Services
             return _context.UserInfo.SingleOrDefault(user => user.Username == Username) != null;
         }
 
-         public bool AddUser(CreateAccountDTO UserToAdd)
+        public bool AddUser(CreateAccountDTO UserToAdd)
         {
-           bool result = false;
+            bool result = false;
             if (!DoesUserExist(UserToAdd.Username))
             {
                 UserModel newUser = new UserModel();
@@ -44,9 +44,9 @@ namespace CodewarsSprintBackend.Services
             }
 
             return result;
-            }
+        }
 
-            public PasswordDTO HashPassword(string? password)
+        public PasswordDTO HashPassword(string? password)
         {
             PasswordDTO newHashedPassword = new PasswordDTO();
 
@@ -69,7 +69,7 @@ namespace CodewarsSprintBackend.Services
 
         }
 
-         public bool VerifyUserPassword(string? Password, string? storeHash, string? storeSalt)
+        public bool VerifyUserPassword(string? Password, string? storeHash, string? storeSalt)
         {
             var SaltBytes = Convert.FromBase64String(storeSalt);
             var rfc2898DeriveBytes = new Rfc2898DeriveBytes(Password, SaltBytes, 10000);
@@ -78,7 +78,7 @@ namespace CodewarsSprintBackend.Services
             return newHash == storeHash;
         }
 
-          public IActionResult Login(LoginDTO User)
+        public IActionResult Login(LoginDTO User)
         {
             IActionResult Result = Unauthorized();
 
@@ -108,7 +108,10 @@ namespace CodewarsSprintBackend.Services
             return _context.UserInfo.SingleOrDefault(user => user.Username == username);
         }
 
-
+        public IEnumerable<UserModel> GetAllUsers()
+        {
+            return _context.UserInfo;
+        }
 
     }
 }

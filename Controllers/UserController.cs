@@ -34,4 +34,11 @@ public class UserController : ControllerBase
 
     }
 
+    [HttpGet]
+    [Route("GetAllUsers")]
+
+    public IEnumerable<UserModel> GetAllUsers()
+    {
+        return _data.GetAllUsers();
+    }
 }
