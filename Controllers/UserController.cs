@@ -41,4 +41,11 @@ public class UserController : ControllerBase
     {
         return _data.GetAllUsers();
     }
+
+    [HttpGet("GetIsAdmin/{username}")]
+
+    public isAdminDTO GetIsAdmin(string username){
+        return _data.GetIsAdmin(username);
+    }
+
 }

@@ -113,5 +113,14 @@ namespace CodewarsSprintBackend.Services
             return _context.UserInfo;
         }
 
+          public isAdminDTO GetIsAdmin(string username){
+            var UserInfo = new isAdminDTO();
+            var foundUser = _context.UserInfo.SingleOrDefault(user => user.Username == username);
+            UserInfo.Id = foundUser.Id;
+            UserInfo.Username = foundUser.Username;
+            UserInfo.isAdmin = foundUser.isAdmin;
+            return UserInfo;
+        }
+
     }
 }
