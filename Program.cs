@@ -15,7 +15,7 @@ builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(conne
 builder.Services.AddCors(options => {
     options.AddPolicy("CodewarsBackendPolicy", 
     builder => {
-        builder.WithOrigins("http://localhost:3000", "http://localhost:3001", "http://localhost:3002")
+        builder.WithOrigins("http://localhost:3000", "http://localhost:3001", "http://localhost:3002", "https://codewarsreservationapp.azurewebsites.net")
         .AllowAnyHeader()
         .AllowAnyMethod();
     });
